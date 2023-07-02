@@ -23,7 +23,7 @@ class PostCollection extends ResourceCollection
                     'created_at' => $data->created_at
                 ];
             }),
-            'message' => 'Posts Fetched Successfully.',
+            'message' => 'Posts fetched successfully.',
             'status' => 200
         ];
     }

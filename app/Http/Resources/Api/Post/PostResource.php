@@ -21,8 +21,8 @@ class PostResource extends JsonResource
                 'content' => $this->content,
                 'publish' => $this->publish,
             ],
-            'message' => 'Post Fetched Successfully!!',
+            'message' => 'Post fetched successfully.',
             'status' => 200
-        ] ;
+        ];
     }
 }

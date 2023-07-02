@@ -139,7 +139,7 @@ class PostController extends ApiController
         try {
             $this->postModel->create($request->validated());
             DB::commit();
-            return $this->responseSuccess('Post created successfully.');
+            return $this->responseSuccess('Post created successfully.', 201);
         } catch (Exception $exception) {
             DB::rollBack();
             return $this->responseError($exception, 'Something went wrong.');
